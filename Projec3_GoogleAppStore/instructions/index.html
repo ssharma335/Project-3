@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Cell Phone App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <div class='wrapper'>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Google & Android
+         
+        </a>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Creates the Overall Grid -->
+  <div class="hero text-center">
+    <h1>Most Popular Apps on Google Play Store</h1>
+    <p> These are the ones that Android’s two billion active users have downloaded most frequently.</p>
+
+     <div class="row">
+        <img class="nav-fx" src="static/images/playstore.png">
+
+        <div class="col-md-6 pad top"> <br>
+          <h3>Android Apps in the Google Play Store</h3> <br>
+        </div>
+
+        <div class="col-md-6 pad top"> <br>
+          <h3></h3> <br>
+        </div>
+
+      </div> 
+    <div class="form- group">
+      <ul class="list-group" id="filters">
+        <li class="filter list-group-items">
+          <label for="AppInput">Apps</label>
+        <select id="AppInput" onchange="getData(this.value)">
+           <option value="Facebook"></option>
+           <option value="Instagram"></option>
+           <option value="WhatsApp"></option>
+           
+        </select>
+        </li>
+        <!-- <li class="filter list-group-item">
+            <label for="analysis_option">Analysis Option</label>
+            <input class="form-control" id="study_option" type="text" placeholder="white oak">                   -->
+            <!-- <select id="analysis_option" onchange="getData(this.value)">
+              <option value="fx_general">FX General Info</option>
+              <option value="trade_fx">FX & Trading Info</option>
+              <option value="trade_analysis">Trade Analysis</option>    -->
+
+      </ul>
+
+        </div>
+        
+       
+        <div class="cols-md-7">
+            <!-- <div class="iframeContainer"> -->
+                <div class="panel-heading">Trending</div>
+                <div class="panel-body">
+                <table id="summary-table" class="table table-striped"> 
+              
+              </div>
+            </div>
+            <footer class="footer">
+              <span class="bottom">Most reviewed Apps </span>
+            </footer>
+        </div>
+      
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="static/js/plots.js"></script>
+  <script src="static/js/app.js"></script>
+  </body>
+  </html>
+  
